@@ -1,0 +1,117 @@
+#top {
+    height: auto;
+    width: auto;
+}
+
+#header {
+    background-image: url('image/topic.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: auto;
+}
+#content {
+    /* height: 1000px; */
+}
+.right {
+    height: auto;
+}
+
+.left {
+    height: auto;
+}
+
+#footer {
+    height: 50px;
+    width: auto;
+    background-color: rgb(122, 120, 120);
+}
+
+.topicword {
+    font-size: 45px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.subtopicword {
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+.article-topic {
+    margin: 0 auto auto 10%;
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+}
+
+.article-date {
+    margin: auto auto auto 80%;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+.article-image {
+    margin: 3px 10% 5% 10%;
+    width: 70%;
+}
+
+.article-image-small {
+    margin: 3px 10% 5% 10%;
+    width: 30%;
+}
+
+.article-content {
+    margin: 5% 10% 5% 10%;
+    font-size: 20px;
+}
+
+.article-code {
+    margin: 0 10% 0 10%;
+}
+
+.article {
+    margin: 50px 10px 50px 10px;
+    background-color: rgb(236, 255, 255);
+}
+
+.line {
+    margin: 0 5% 0 5%;
+    border-width: 2px;
+}
+
+.side-block {
+    margin: 10% 5%;
+    height: 300px;
+    background-color: rgb(255, 230, 198);
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+ul { /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    display: inline;
+    padding: 0 10px;
+}
+.menu {
+    margin: 50px 0 0 0;
+    width: 500px;
+    height: 35px;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+.menu ui li {
+    float: left;
+} 
+
+a {
+    color: #054880;
+}
+
+

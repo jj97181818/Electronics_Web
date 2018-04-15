@@ -1,0 +1,238 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cabin+Sketch|Caveat|Handlee|Rancho" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="elec.css">
+        <title>電子學網站</title>
+    </head>
+    <body>
+        <div id="top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="topicword">Electronics</p>
+                        <p class="subtopicword">A web to record what we learned in electronics class </p>    
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-5">
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="">Article</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Code</a></li>
+                            <li><a href="http://irobot.ntue.edu.tw/EL/indexEl.html">Reference</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div> 
+            </div>
+        </div>
+        <div id="header">
+        </div>
+        <div id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 left">
+                        <div class="article">
+                            <p class="article-topic">Marketing Strategy of Music Box</p>
+                            <p class="article-date">MARCH 2,2018</p>
+                            <hr class="line">
+                            <p class="article-content">1.在 youtube 上面放展示，或介紹產品的影片<br>
+                                                        請知名 youtuber 或可愛的小朋友錄製開箱文<br>
+                                                        辦抽獎活動<br>
+                                                        期間限定版</p>
+                                                        
+                            <p class="article-content">2.創粉絲專頁，放創作的產品，以及我們的理念，提供部份客製化<br>
+                                                        在粉絲專頁上設置活動，如：按贊分享及抽獎、票選等，增加知名度<br>
+                                                        按照節慶或客製化各種特別的音樂盒<br>
+                                                        期間限定版</p>
+                                                        
+                            <p class="article-content">3.在部落格或架一個網站，分享創作產品的步驟與過程，吸引 maker，將所需材料與並附上教學文，作為材料組合包賣出去<br>
+                                                        辦徵選比賽<br>
+                                                        開一個 Q&A 專區來解決 DIY 的相關問題。</p>
+                            
+                        </div>
+                        
+                        <div class="article">
+                            <p class="article-topic">Bluetooth-I</p>
+                            <p class="article-date">MARCH 9,2018</p>
+                            <hr class="line">
+                            <p class="article-content">1.測試電源模組。</p>
+                            <img class="article-image img-responsive img-fluid" src="image/0309/2.jpg">
+                            <p class="article-content">2.將藍牙模組與 ATMega328 以 RX <-> TX 的方式插在麵包板上。</p>
+                            <img class="article-image img-responsive img-fluid" src="image/0309/4.jpg">
+                            <p class="article-content">3.開啟手機藍牙，並與自己組內的藍牙配對。</p>
+                            <p class="article-content">4.藍牙連上後，下載 apk 檔：<a href="http://irobot.ntue.edu.tw/EL/BlueTooth/files/UniversalBT.apk">http://irobot.ntue.edu.tw/EL/BlueTooth/files/UniversalBT.apk</a></p>
+                            <p class="article-content">整個過程藉由手機 -> 藍牙晶片 -> arduino 晶片，這樣的方式操作。</p>
+                            <p class="article-content">若沒有藍牙，可以用序列監控視窗（115200 baud //bits per second）取代，輸入 1 或 0 的 ASCII 即可測試</p>
+                            <p class="article-content"><i class="fab fa-github"></i> 程式 1：用藍牙控制 LED 燈亮與否（1->亮  0->暗）</p>
+                            <div class="article-code"><script src="https://gist.github.com/jj97181818/6f338efd480242535c13cb20dba204bf.js"></script></div>
+                            <p class="article-content"><i class="fab fa-github"></i> 程式 2：用藍牙控制車子前進</p>
+                            <div class="article-code"><script src="https://gist.github.com/jj97181818/fcec15a06d0d45af221707e3057068e6.js"></script></div>
+                        </div>
+
+                        <div class="article">
+                                <p class="article-topic">Bluetooth-II</p>
+                                <p class="article-date">MARCH 16,2018</p>
+                                <hr class="line">
+                                <table class="article-content">
+                                        <tr>    
+                                            <td>USB</td>
+                                            <td>V.S.</td>
+                                            <td>藍牙</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5V</td>
+                                            <td><-></td>
+                                            <td>5V</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GND</td>
+                                            <td><-></td>
+                                            <td>GND</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RX</td>
+                                            <td><-></td>
+                                            <td>TX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TX</td>
+                                            <td><-></td>
+                                            <td>RX</td>
+                                        </tr>
+                                </table>
+                                <img class="article-image img-responsive img-fluid" src="image/0316/5.jpg">     
+                                <p class="article-content">AT COMMAND MODE:用跳接器（jumper）把 3.3V 和 set 短路，及進入AT MODE。</p>
+                                <img class="article-image img-responsive img-fluid" src="image/0316/4.jpg">
+                                <p class="article-content"> 1. 接完之後，再插上 USB，打入 AT，會出現 OK。<br>
+                                                            2. 打入 AT+BAUD，會出現 +BAUD=8，代表他的 BAUD 是 115200 <br>
+                                                            3. 要改 BAUD 為 9600 的話，就在 115200 下打入 AT+BAUD4，再回去 9600 下，輸入 AT+BAUD，就能看到 +BAUD=4<br>
+                                                            4. 打入 AT+HELP 可以看到所有 AT 指令</p>
+                                <p class="article-content"><i class="fab fa-github"></i> 程式 1：LED 改成serialEvent（不是時時刻刻在偵測）函式名稱不能改（包含大小寫）</p>
+                                <div class="article-code"><script src="https://gist.github.com/jj97181818/9203df7bb8a0f378ec3c0a4859ce8c75.js"></script></div>
+                                <p class="article-content"><i class="fab fa-github"></i> 程式 2：LED 不讓他一直重複亮（收到 1 byte 的資料時，才會偵測）</p>
+                                <div class="article-code"><script src="https://gist.github.com/jj97181818/04280ef3bf4f6604250fc397968a4995.js"></script></div>
+                                <p class="article-content"><i class="fab fa-github"></i> 程式 3：LED 加一顆 LED 讓他一直亮（loop），原本那顆一樣用藍牙控制（event），按1或0時（中斷指令），程式會先把他現在那一行程式做完，再執行中斷指令，影響到中斷的即時性</p>
+                                <img class="article-image img-responsive img-fluid" src="image/0316/2.jpg">
+                                <div class="article-code"><script src="https://gist.github.com/jj97181818/7ee933017ef506d0f6dd8707db712176.js"></script></div>
+                                <p class="article-content"><i class="fab fa-github"></i> 程式 4：LED 從手機按 1 的按鈕，LCD 會出現 1 和 49（1 的 ASCII），藍牙(BT)的 TX 傳給晶片（ATMEGA）的 RX，傳輸的間隔時間要一致，我們利用 baud 來控制多久收/傳一次</p>
+                                <img class="article-image img-responsive img-fluid" src="image/0316/3.jpg">
+                                <div class="article-code"><script src="https://gist.github.com/jj97181818/827b20e6db18fa9da233e64084a9c700.js"></script></div>
+                                <p class="article-content"><i class="fas fa-pencil-alt"></i> Homework 1：UART（記得將藍牙和晶片的 GND 接在一起，如此一來才會有同樣的電位基準）</p>
+                                <p class="article-content"><i class="fas fa-pencil-alt"></i> Homework 2：lcd.write 和 lcd.print的不同</p>
+                        </div>
+                        <div class="article">
+                            <p class="article-topic">APP Inventor</p>
+                            <p class="article-date">MARCH 23,2018</p>
+                            <hr class="line">
+                            <p class="article-content">APP Inventor 官網：<a href="http://ai2.appinventor.mit.edu">http://ai2.appinventor.mit.edu</a></p>
+                            <p class="article-content">進到官網後，左上角有個 Projects，點一下會看到下拉式選單。</p>
+                            <img class="article-image-small img-responsive img-fluid" src="image/0323/4.png">
+                            <p class="article-content">其中的 My projects，可以看到如下的畫面，有自己所擁有的專案。</p>
+                            <img class="article-image img-responsive img-fluid" src="image/0323/5.png">
+                            <p class="article-content">左上角除了 Projects，還有 Connect，點一下同樣會看到下拉式選單。</p>
+                            <img class="article-image-small img-responsive img-fluid" src="image/0323/6.png">
+                            <p class="article-content">在選擇一個專案，或開新專案後，在右上角會看到有兩種開發者模式：Designer 和 Blocks</p>
+                            <img class="article-image img-responsive img-fluid" src="image/0323/1.png">
+                            <p class="article-content">這是 Blocks 模式，寫 APP 背後的程式。</p>
+                            <img class="article-image img-responsive img-fluid" src="image/0323/2.png">
+                            <p class="article-content">這是 Designer 模式，做 APP 畫面設計。</p>
+                            <img class="article-image img-responsive img-fluid" src="image/0323/3.png">
+                            <p class="article-content"><i class="fab fa-github"></i> 程式 1：用手機 APP 按鈕，操控車子前後左右。 </p>
+                            <div class="article-code"><script src="https://gist.github.com/jj97181818/f72e4242c65b2909b8635b55f765d9c0.js"></script></div>
+                            <div class="article-code"></div>
+                            <p class="article-content">
+                                <a href="data/Button_Car.apk">apk 檔載點</a><br>
+                                <a href="data/Button_Car.aia">aia 檔載點</a> 
+                            </p>
+                        </div>
+                        <div class="article">
+                                <p class="article-topic">Gyroscope Control</p>
+                                <p class="article-date">MARCH 30,2018</p>
+                                <hr class="line">
+                                <p class="article-content">AT+NAME  得到：+NAME=CS4_1（詢問名稱）<br>
+                                                           AT+NAMETCS4_1 得到：+NAME=TCS4_1（改名稱）</p>
+                                <p class="article-content"><i class="fab fa-github"></i> 程式 1：陀螺儀控制車子前後左右 </p>
+                                <div class="article-code"><script src="https://gist.github.com/jj97181818/88e26e5472127ac7a884ba886d2b72c6.js"></script></div>
+                                <p class="article-content">
+                                    <a href="data/Sensor_Car.apk">apk 檔載點</a><br>
+                                    <a href="data/Sensor_Car.aia">aia 檔載點</a> 
+                                </p>
+                        </div>
+                        <div class="article">
+                            <p class="article-topic">Voice Control</p>
+                            <p class="article-date">April 14,2018</p>
+                            <hr class="line">
+                            <p class="article-content">
+
+                                Slave:<br>
+                                AT+DEFAULT<br>
+                                -> Arduino 程式中的 Baud rate 要設定正確，YFRobot 藍牙模組預設為 9600bps。<br><br>
+                                AT+CLEAR<br><br>
+                                AT+LADDR<br>
+                                -> 出現+LADDR=98:d3:31:b0:f7:55<br><br>
+                                接著把 ":" 變成 ","<br>
+                                然後把 slave　的　jumper　拿掉<br><br><br>
+                                
+                                
+                                Master:<br>
+                                AT+DEFAULT<br><br>
+                                AT+CLEAR<br><br>
+                                AT+CONNECT98,d3,31,b0,f7,55<br><br>
+                                
+                                
+                                YFrobot 藍牙模組要退休了owo<br>
+                                它是大陸公司自行開發的藍牙核心板 BC-04，和一般常用的 HC-05 不同。<br>
+                                AT 指令集也都不太相同。<br>
+                                之後我們要改成用 HC-05 了！<br><br>
+                            </p>
+                            <p class="article-content">1.精巧音樂盒<br>
+                                可以有期間限定的版本<br>
+                                可以從手機傳音樂</p>
+                                
+                            <p class="article-content">2.ＫＴＶ點歌機<br>
+                                限定活動，例如：歌唱排名大賽<br>
+                                用麥克風遙控<br>
+                                會有燈光效果</p>
+
+                             <p class="article-content">3.搬小東西的機器人<br>
+                                讓機器人有語音提示的功能，使送貨更順利<br>
+                                可以組合很多台</p>
+                            <p class="article-content"><i class="fab fa-github"></i> 程式 1：語音控制 LED 燈開關 </p>
+                            <div class="article-code"><script src="https://gist.github.com/jj97181818/4976882706727c5c369a1e47ce5b4f8b.js"></script></div>
+                            <p class="article-content">
+                                <a href="data/Voice_Led.apk">apk 檔載點</a><br>
+                                <a href="data/Voice_Led.aia">aia 檔載點</a> 
+                            </p>
+                            <p class="article-content"><i class="fab fa-github"></i> 程式 2：語音控制車子前後左右  </p>
+                            <div class="article-code"><script src="https://gist.github.com/jj97181818/423bac37b541cc56f6c0779757937c4b.js"></script></div>
+                            <p class="article-content">
+                                <a href="data/Sensor_car.apk">apk 檔載點</a><br>
+                                <a href="data/Sensor_car.aia">aia 檔載點</a>
+                            </p>
+                            <p class="article-content"><a href="https://stonez56.blogspot.tw/2017/01/mit-app-inventor-2-voice-recognition.html">參考語音的實作部份</a></p>
+                        </div>
+                    </div>
+                        
+                    <div class="col-lg-3 right">
+                        <div class="side-block">
+                            <p>Article</p>
+                        </div>
+                        <div class="side-block">
+                            <p>Gallery</p>
+                        </div>
+                        <div class="side-block">
+                            <p>Codes</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>
