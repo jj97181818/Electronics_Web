@@ -69,6 +69,9 @@
     margin: 0 10% 0 10%;
 }
 
+.article-link {
+    font-size: 20px;
+}
 .article {
     margin: 50px 10px 50px 10px;
     background-color: rgb(236, 255, 255);
@@ -81,7 +84,7 @@
 
 .side-block {
     margin: 10% 5%;
-    height: 300px;
+    height: 600px;
     background-color: rgb(255, 230, 198);
     font-family: 'Caveat', cursive;
     font-size: 30px;
